@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.mlauffer.trip.view.Master"
+	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page id="page" title="{i18n>masterTitle}">
+		<subHeader>
+			<Bar id="searchBar">
+				<contentMiddle>
+					<SearchField id="searchField" showRefreshButton="{device>/isNoTouch}"
+						search="onSearch" tooltip="{i18n>masterSearchTooltip}" width="100%">
+					</SearchField>
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+		<content>
+			<List id="list" items="{/Trips}" mode="{device>/listMode}"
+				noDataText="{i18n>noDataText}" select="onSelect" growing="true"
+				growingScrollToLoad="true">
+				<items>
+					<ObjectListItem type="{device>/listItemType}" press="onSelect"
+						title="{Name}" />
+				</items>
+			</List>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button icon="sap-icon://add" press="onAddTrip" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

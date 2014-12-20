@@ -1,0 +1,35 @@
+<mvc:View controllerName="com.mlauffer.trip.view.AddExpense"
+	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Page title="{i18n>detailTitle}">
+		<l:Grid defaultSpan="L12 M12 S12" width="auto">
+			<l:content>
+				<f:SimpleForm minWidth="800" maxContainerCols="2"
+					editable="true" layout="ResponsiveGridLayout" labelSpanL="3"
+					labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+					<f:content>
+						<core:Title text="{i18n>newExpense}" />
+						<Label text="{i18n>date}" />
+						<DateTimeInput id="date" type="Date"
+							value="{newReg>/Detail/Date}" />
+						<Label text="{i18n>Description}" />
+						<Input id="description" value="{newReg>/Detail/Description}" />
+						<Label text="{i18n>price}" />
+						<Input id="price" type="Number" value="{newReg>/Detail/Price}" />
+						<Label visible="false" text="{i18n>currency}" />
+						<Input visible="false" id="currency" value="{newReg>/Detail/Currency}" />
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button icon="sap-icon://save" text="{i18n>buttonSave}"
+						type="Emphasized" press="onSave" />
+					<Button text="{i18n>buttonCancel}" press="onCancel" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

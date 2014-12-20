@@ -1,0 +1,58 @@
+<mvc:View controllerName="com.mlauffer.trip.view.Detail"
+	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Page showNavButton="{device>/isPhone}" navButtonPress="onNavBack"
+		class="sapUiFioriObjectPage" title="{i18n>detailTitle}">
+		<content>
+			<ObjectHeader title="{Name}">
+				<attributes>
+					<ObjectAttribute title="{i18n>dateBegin}"
+						text="{
+						path: 'DateBegin',
+						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
+						}" />
+				</attributes>
+				<statuses>
+					<ObjectStatus title="{i18n>dateEnd}"
+						text="{
+						path: 'DateEnd',
+						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
+						}" />
+				</statuses>
+			</ObjectHeader>
+			<Table id="expenses" items="{Expenses}" noDataText="{i18n>noDataText}"
+				growing="true" growingScrollToLoad="true">
+				<columns>
+					<Column>
+						<Text text="{i18n>date}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>description}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>price}" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onDetailSelect">
+						<Text
+							text="{
+						path: 'Date',
+						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
+						}" />
+						<Text text="{Description}" />
+						<ObjectNumber number="{Price}" unit="{Currency}" />
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button icon="sap-icon://edit" press="onEditTrip" />
+					<Button icon="sap-icon://payment-approval" press="onAddExpense" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

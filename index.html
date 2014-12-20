@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="author" content="Mauricio Lauffer">
+<title>TripLog</title>
+
+<script id="sap-ui-bootstrap" src="./resources/sap-ui-core.js"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal"
+	data-sap-ui-xx-bindingSyntax="complex"
+	data-sap-ui-resourceroots='{
+            "com.mlauffer.trip": "./"
+        }'>
+	//	data-sap-ui-language="pt_BR"
+</script>
+
+<script>
+	sap.ui.getCore().attachInit(function() {
+		new sap.m.Shell({
+			app : new sap.ui.core.ComponentContainer({
+				height : "100%",
+				name : "com.mlauffer.trip"
+			})
+		}).placeAt("content");
+	});
+</script>
+
+<script type="text/javascript" src="./cordova.js"></script>
+</head>
+
+<body class="sapUiBody" id="content" />
+
+</html>
