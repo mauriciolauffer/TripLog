@@ -26,6 +26,8 @@
 				<contentRight>
 					<Button icon="sap-icon://save" text="{i18n>buttonSave}"
 						type="Emphasized" press="onSave" />
+					<Button icon="sap-icon://delete" text="{i18n>buttonDelete}"
+						type="Reject" press="onDelete" />
 					<Button text="{i18n>buttonCancel}" press="onCancel" />
 				</contentRight>
 			</Bar>

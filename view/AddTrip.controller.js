@@ -96,10 +96,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 	},
 
 	onCancel : function() {
-		if (jQuery.device.is.phone) {
-			sap.ui.core.UIComponent.geRouterFor(this).backWithoutHash(
-					this.getView());
-		}
+		sap.ui.core.UIComponent.getRouterFor(this).backWithoutHash(this.getView());
 		this.getView().unbindElement();
 	},
 

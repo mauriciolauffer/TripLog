@@ -1,0 +1,1970 @@
+{
+  "CountryCollection": 
+    {
+      "EN": [
+        {
+          "ISOCountry": "AD",
+          "Country": "Andorra"
+        },
+        {
+          "ISOCountry": "AE",
+          "Country": "United Arab Emirates"
+        },
+        {
+          "ISOCountry": "AF",
+          "Country": "Afghanistan"
+        },
+        {
+          "ISOCountry": "AG",
+          "Country": "Antigua and Barbuda"
+        },
+        {
+          "ISOCountry": "AI",
+          "Country": "Anguilla"
+        },
+        {
+          "ISOCountry": "AL",
+          "Country": "Albania"
+        },
+        {
+          "ISOCountry": "AM",
+          "Country": "Armenia"
+        },
+        {
+          "ISOCountry": "AO",
+          "Country": "Angola"
+        },
+        {
+          "ISOCountry": "AQ",
+          "Country": "Antarctica"
+        },
+        {
+          "ISOCountry": "AR",
+          "Country": "Argentina"
+        },
+        {
+          "ISOCountry": "AS",
+          "Country": "American Samoa"
+        },
+        {
+          "ISOCountry": "AT",
+          "Country": "Austria"
+        },
+        {
+          "ISOCountry": "AU",
+          "Country": "Australia"
+        },
+        {
+          "ISOCountry": "AW",
+          "Country": "Aruba"
+        },
+        {
+          "ISOCountry": "AZ",
+          "Country": "Azerbaijan"
+        },
+        {
+          "ISOCountry": "BA",
+          "Country": "Bosnia and Herzegovina"
+        },
+        {
+          "ISOCountry": "BB",
+          "Country": "Barbados"
+        },
+        {
+          "ISOCountry": "BD",
+          "Country": "Bangladesh"
+        },
+        {
+          "ISOCountry": "BE",
+          "Country": "Belgium"
+        },
+        {
+          "ISOCountry": "BF",
+          "Country": "Burkina Faso"
+        },
+        {
+          "ISOCountry": "BG",
+          "Country": "Bulgaria"
+        },
+        {
+          "ISOCountry": "BH",
+          "Country": "Bahrain"
+        },
+        {
+          "ISOCountry": "BI",
+          "Country": "Burundi"
+        },
+        {
+          "ISOCountry": "BJ",
+          "Country": "Benin"
+        },
+        {
+          "ISOCountry": "BM",
+          "Country": "Bermuda"
+        },
+        {
+          "ISOCountry": "BN",
+          "Country": "Brunei Darussalam"
+        },
+        {
+          "ISOCountry": "BO",
+          "Country": "Bolivia"
+        },
+        {
+          "ISOCountry": "BQ",
+          "Country": "Bonaire, Sint Eustatius and Saba"
+        },
+        {
+          "ISOCountry": "BR",
+          "Country": "Brazil"
+        },
+        {
+          "ISOCountry": "BS",
+          "Country": "Bahamas"
+        },
+        {
+          "ISOCountry": "BT",
+          "Country": "Bhutan"
+        },
+        {
+          "ISOCountry": "BV",
+          "Country": "Bouvet Islands"
+        },
+        {
+          "ISOCountry": "BW",
+          "Country": "Botswana"
+        },
+        {
+          "ISOCountry": "BY",
+          "Country": "Belarus"
+        },
+        {
+          "ISOCountry": "BZ",
+          "Country": "Belize"
+        },
+        {
+          "ISOCountry": "CA",
+          "Country": "Canada"
+        },
+        {
+          "ISOCountry": "CC",
+          "Country": "Coconut Islands"
+        },
+        {
+          "ISOCountry": "CD",
+          "Country": "Democratic Republic of the Congo"
+        },
+        {
+          "ISOCountry": "CF",
+          "Country": "Central African Republic"
+        },
+        {
+          "ISOCountry": "CG",
+          "Country": "Republic of the Congo"
+        },
+        {
+          "ISOCountry": "CH",
+          "Country": "Switzerland"
+        },
+        {
+          "ISOCountry": "CI",
+          "Country": "Cote d'Ivoire"
+        },
+        {
+          "ISOCountry": "CK",
+          "Country": "Cook Islands"
+        },
+        {
+          "ISOCountry": "CL",
+          "Country": "Chile"
+        },
+        {
+          "ISOCountry": "CM",
+          "Country": "Cameroon"
+        },
+        {
+          "ISOCountry": "CN",
+          "Country": "China"
+        },
+        {
+          "ISOCountry": "CO",
+          "Country": "Colombia"
+        },
+        {
+          "ISOCountry": "CR",
+          "Country": "Costa Rica"
+        },
+        {
+          "ISOCountry": "CS",
+          "Country": "Serbia and Montenegro"
+        },
+        {
+          "ISOCountry": "CU",
+          "Country": "Cuba"
+        },
+        {
+          "ISOCountry": "CV",
+          "Country": "Cape Verde"
+        },
+        {
+          "ISOCountry": "CW",
+          "Country": "Cura�ao"
+        },
+        {
+          "ISOCountry": "CX",
+          "Country": "Christmas Islnd"
+        },
+        {
+          "ISOCountry": "CY",
+          "Country": "Cyprus"
+        },
+        {
+          "ISOCountry": "CZ",
+          "Country": "Czech Republic"
+        },
+        {
+          "ISOCountry": "DE",
+          "Country": "Germany"
+        },
+        {
+          "ISOCountry": "DJ",
+          "Country": "Djibouti"
+        },
+        {
+          "ISOCountry": "DK",
+          "Country": "Denmark"
+        },
+        {
+          "ISOCountry": "DM",
+          "Country": "Dominica"
+        },
+        {
+          "ISOCountry": "DO",
+          "Country": "Dominican Republic"
+        },
+        {
+          "ISOCountry": "DZ",
+          "Country": "Algeria"
+        },
+        {
+          "ISOCountry": "EC",
+          "Country": "Ecuador"
+        },
+        {
+          "ISOCountry": "EE",
+          "Country": "Estonia"
+        },
+        {
+          "ISOCountry": "EG",
+          "Country": "Egypt"
+        },
+        {
+          "ISOCountry": "EH",
+          "Country": "West Sahara"
+        },
+        {
+          "ISOCountry": "ER",
+          "Country": "Eritrea"
+        },
+        {
+          "ISOCountry": "ES",
+          "Country": "Spain"
+        },
+        {
+          "ISOCountry": "ET",
+          "Country": "Ethiopia"
+        },
+        {
+          "ISOCountry": "FI",
+          "Country": "Finland"
+        },
+        {
+          "ISOCountry": "FJ",
+          "Country": "Fiji"
+        },
+        {
+          "ISOCountry": "FK",
+          "Country": "Falkland Islands"
+        },
+        {
+          "ISOCountry": "FM",
+          "Country": "Micronesia"
+        },
+        {
+          "ISOCountry": "FO",
+          "Country": "Faroe Islands"
+        },
+        {
+          "ISOCountry": "FR",
+          "Country": "France"
+        },
+        {
+          "ISOCountry": "GA",
+          "Country": "Gabon"
+        },
+        {
+          "ISOCountry": "GB",
+          "Country": "United Kingdom"
+        },
+        {
+          "ISOCountry": "GD",
+          "Country": "Grenada"
+        },
+        {
+          "ISOCountry": "GE",
+          "Country": "Georgia"
+        },
+        {
+          "ISOCountry": "GF",
+          "Country": "French Guyana"
+        },
+        {
+          "ISOCountry": "GG",
+          "Country": "Guernsey (Channel Islands)"
+        },
+        {
+          "ISOCountry": "GH",
+          "Country": "Ghana"
+        },
+        {
+          "ISOCountry": "GI",
+          "Country": "Gibraltar"
+        },
+        {
+          "ISOCountry": "GL",
+          "Country": "Greenland"
+        },
+        {
+          "ISOCountry": "GM",
+          "Country": "Gambia"
+        },
+        {
+          "ISOCountry": "GN",
+          "Country": "Guinea"
+        },
+        {
+          "ISOCountry": "GP",
+          "Country": "Guadeloupe"
+        },
+        {
+          "ISOCountry": "GQ",
+          "Country": "Equatorial Guinea"
+        },
+        {
+          "ISOCountry": "GR",
+          "Country": "Greece"
+        },
+        {
+          "ISOCountry": "GS",
+          "Country": "South Georgia and the Southern Sandwich Islands"
+        },
+        {
+          "ISOCountry": "GT",
+          "Country": "Guatemala"
+        },
+        {
+          "ISOCountry": "GU",
+          "Country": "Guam"
+        },
+        {
+          "ISOCountry": "GW",
+          "Country": "Guinea-Bissau"
+        },
+        {
+          "ISOCountry": "GY",
+          "Country": "Guyana"
+        },
+        {
+          "ISOCountry": "HK",
+          "Country": "Hong Kong"
+        },
+        {
+          "ISOCountry": "HM",
+          "Country": "Heard and McDonald Islands"
+        },
+        {
+          "ISOCountry": "HN",
+          "Country": "Honduras"
+        },
+        {
+          "ISOCountry": "HR",
+          "Country": "Croatia"
+        },
+        {
+          "ISOCountry": "HT",
+          "Country": "Haiti"
+        },
+        {
+          "ISOCountry": "HU",
+          "Country": "Hungary"
+        },
+        {
+          "ISOCountry": "ID",
+          "Country": "Indonesia"
+        },
+        {
+          "ISOCountry": "IE",
+          "Country": "Ireland"
+        },
+        {
+          "ISOCountry": "IL",
+          "Country": "Israel"
+        },
+        {
+          "ISOCountry": "IM",
+          "Country": "Isle of Man"
+        },
+        {
+          "ISOCountry": "IN",
+          "Country": "India"
+        },
+        {
+          "ISOCountry": "IO",
+          "Country": "British Indian Ocean Territory"
+        },
+        {
+          "ISOCountry": "IQ",
+          "Country": "Iraq"
+        },
+        {
+          "ISOCountry": "IR",
+          "Country": "Iran"
+        },
+        {
+          "ISOCountry": "IS",
+          "Country": "Iceland"
+        },
+        {
+          "ISOCountry": "IT",
+          "Country": "Italy"
+        },
+        {
+          "ISOCountry": "JE",
+          "Country": "Jersey"
+        },
+        {
+          "ISOCountry": "JM",
+          "Country": "Jamaica"
+        },
+        {
+          "ISOCountry": "JO",
+          "Country": "Jordan"
+        },
+        {
+          "ISOCountry": "JP",
+          "Country": "Japan"
+        },
+        {
+          "ISOCountry": "KE",
+          "Country": "Kenya"
+        },
+        {
+          "ISOCountry": "KG",
+          "Country": "Kyrgyzstan"
+        },
+        {
+          "ISOCountry": "KH",
+          "Country": "Cambodia"
+        },
+        {
+          "ISOCountry": "KI",
+          "Country": "Kiribati"
+        },
+        {
+          "ISOCountry": "KM",
+          "Country": "Comoros"
+        },
+        {
+          "ISOCountry": "KN",
+          "Country": "Saint Kitts and Nevis"
+        },
+        {
+          "ISOCountry": "KP",
+          "Country": "North Korea"
+        },
+        {
+          "ISOCountry": "KR",
+          "Country": "South Korea"
+        },
+        {
+          "ISOCountry": "KW",
+          "Country": "Kuwait"
+        },
+        {
+          "ISOCountry": "KY",
+          "Country": "Cayman Islands"
+        },
+        {
+          "ISOCountry": "KZ",
+          "Country": "Kazakhstan"
+        },
+        {
+          "ISOCountry": "LA",
+          "Country": "Laos"
+        },
+        {
+          "ISOCountry": "LB",
+          "Country": "Lebanon"
+        },
+        {
+          "ISOCountry": "LC",
+          "Country": "St. Lucia"
+        },
+        {
+          "ISOCountry": "LI",
+          "Country": "Liechtenstein"
+        },
+        {
+          "ISOCountry": "LK",
+          "Country": "Sri Lanka"
+        },
+        {
+          "ISOCountry": "LR",
+          "Country": "Liberia"
+        },
+        {
+          "ISOCountry": "LS",
+          "Country": "Lesotho"
+        },
+        {
+          "ISOCountry": "LT",
+          "Country": "Lithuania"
+        },
+        {
+          "ISOCountry": "LU",
+          "Country": "Luxembourg"
+        },
+        {
+          "ISOCountry": "LV",
+          "Country": "Latvia"
+        },
+        {
+          "ISOCountry": "LY",
+          "Country": "Libya"
+        },
+        {
+          "ISOCountry": "MA",
+          "Country": "Morocco"
+        },
+        {
+          "ISOCountry": "MC",
+          "Country": "Monaco"
+        },
+        {
+          "ISOCountry": "MD",
+          "Country": "Moldova"
+        },
+        {
+          "ISOCountry": "MG",
+          "Country": "Madagascar"
+        },
+        {
+          "ISOCountry": "MH",
+          "Country": "Marshall Islands"
+        },
+        {
+          "ISOCountry": "MK",
+          "Country": "Macedonia"
+        },
+        {
+          "ISOCountry": "ML",
+          "Country": "Mali"
+        },
+        {
+          "ISOCountry": "MM",
+          "Country": "Burma"
+        },
+        {
+          "ISOCountry": "MN",
+          "Country": "Mongolia"
+        },
+        {
+          "ISOCountry": "MO",
+          "Country": "Macau"
+        },
+        {
+          "ISOCountry": "MP",
+          "Country": "North Mariana Islands"
+        },
+        {
+          "ISOCountry": "MQ",
+          "Country": "Martinique"
+        },
+        {
+          "ISOCountry": "MR",
+          "Country": "Mauretania"
+        },
+        {
+          "ISOCountry": "MS",
+          "Country": "Montserrat"
+        },
+        {
+          "ISOCountry": "MT",
+          "Country": "Malta"
+        },
+        {
+          "ISOCountry": "MU",
+          "Country": "Mauritius"
+        },
+        {
+          "ISOCountry": "MV",
+          "Country": "Maldives"
+        },
+        {
+          "ISOCountry": "MW",
+          "Country": "Malawi"
+        },
+        {
+          "ISOCountry": "MX",
+          "Country": "Mexico"
+        },
+        {
+          "ISOCountry": "MY",
+          "Country": "Malaysia"
+        },
+        {
+          "ISOCountry": "MZ",
+          "Country": "Mozambique"
+        },
+        {
+          "ISOCountry": "NA",
+          "Country": "Namibia"
+        },
+        {
+          "ISOCountry": "NC",
+          "Country": "New Caledonia"
+        },
+        {
+          "ISOCountry": "NE",
+          "Country": "Niger"
+        },
+        {
+          "ISOCountry": "NF",
+          "Country": "Norfolk Islands"
+        },
+        {
+          "ISOCountry": "NG",
+          "Country": "Nigeria"
+        },
+        {
+          "ISOCountry": "NI",
+          "Country": "Nicaragua"
+        },
+        {
+          "ISOCountry": "NL",
+          "Country": "Netherlands"
+        },
+        {
+          "ISOCountry": "NO",
+          "Country": "Norway"
+        },
+        {
+          "ISOCountry": "NP",
+          "Country": "Nepal"
+        },
+        {
+          "ISOCountry": "NR",
+          "Country": "Nauru"
+        },
+        {
+          "ISOCountry": "NU",
+          "Country": "Niue"
+        },
+        {
+          "ISOCountry": "NZ",
+          "Country": "New Zealand"
+        },
+        {
+          "ISOCountry": "OM",
+          "Country": "Oman"
+        },
+        {
+          "ISOCountry": "PA",
+          "Country": "Panama"
+        },
+        {
+          "ISOCountry": "PE",
+          "Country": "Peru"
+        },
+        {
+          "ISOCountry": "PF",
+          "Country": "French Polynesia"
+        },
+        {
+          "ISOCountry": "PG",
+          "Country": "Papua New Guinea"
+        },
+        {
+          "ISOCountry": "PH",
+          "Country": "Philippines"
+        },
+        {
+          "ISOCountry": "PK",
+          "Country": "Pakistan"
+        },
+        {
+          "ISOCountry": "PL",
+          "Country": "Poland"
+        },
+        {
+          "ISOCountry": "PM",
+          "Country": "St. Pierre and Miquelon"
+        },
+        {
+          "ISOCountry": "PN",
+          "Country": "Pitcairn Islands"
+        },
+        {
+          "ISOCountry": "PR",
+          "Country": "Puerto Rico"
+        },
+        {
+          "ISOCountry": "PS",
+          "Country": "Palestine"
+        },
+        {
+          "ISOCountry": "PT",
+          "Country": "Portugal"
+        },
+        {
+          "ISOCountry": "PW",
+          "Country": "Palau"
+        },
+        {
+          "ISOCountry": "PY",
+          "Country": "Paraguay"
+        },
+        {
+          "ISOCountry": "QA",
+          "Country": "Qatar"
+        },
+        {
+          "ISOCountry": "RE",
+          "Country": "Reunion"
+        },
+        {
+          "ISOCountry": "RO",
+          "Country": "Romania"
+        },
+        {
+          "ISOCountry": "RU",
+          "Country": "Russian Federation"
+        },
+        {
+          "ISOCountry": "RW",
+          "Country": "Rwanda"
+        },
+        {
+          "ISOCountry": "SA",
+          "Country": "Saudi Arabia"
+        },
+        {
+          "ISOCountry": "SB",
+          "Country": "Solomon Islands"
+        },
+        {
+          "ISOCountry": "SC",
+          "Country": "Seychelles"
+        },
+        {
+          "ISOCountry": "SD",
+          "Country": "Sudan"
+        },
+        {
+          "ISOCountry": "SE",
+          "Country": "Sweden"
+        },
+        {
+          "ISOCountry": "SG",
+          "Country": "Singapore"
+        },
+        {
+          "ISOCountry": "SH",
+          "Country": "Saint Helena"
+        },
+        {
+          "ISOCountry": "SI",
+          "Country": "Slovenia"
+        },
+        {
+          "ISOCountry": "SJ",
+          "Country": "Svalbard"
+        },
+        {
+          "ISOCountry": "SK",
+          "Country": "Slovakia"
+        },
+        {
+          "ISOCountry": "SL",
+          "Country": "Sierra Leone"
+        },
+        {
+          "ISOCountry": "SM",
+          "Country": "San Marino"
+        },
+        {
+          "ISOCountry": "SN",
+          "Country": "Senegal"
+        },
+        {
+          "ISOCountry": "SO",
+          "Country": "Somalia"
+        },
+        {
+          "ISOCountry": "SR",
+          "Country": "Suriname"
+        },
+        {
+          "ISOCountry": "SS",
+          "Country": "South Sudan"
+        },
+        {
+          "ISOCountry": "ST",
+          "Country": "Sao Tome and Principe"
+        },
+        {
+          "ISOCountry": "SV",
+          "Country": "El Salvador"
+        },
+        {
+          "ISOCountry": "SX",
+          "Country": "Sint Maarten (Dutch part)"
+        },
+        {
+          "ISOCountry": "SY",
+          "Country": "Syria"
+        },
+        {
+          "ISOCountry": "SZ",
+          "Country": "Swaziland"
+        },
+        {
+          "ISOCountry": "TC",
+          "Country": "Turks and Caicos Islands"
+        },
+        {
+          "ISOCountry": "TD",
+          "Country": "Chad"
+        },
+        {
+          "ISOCountry": "TF",
+          "Country": "French Southern and Antarctic Lands"
+        },
+        {
+          "ISOCountry": "TG",
+          "Country": "Togo"
+        },
+        {
+          "ISOCountry": "TH",
+          "Country": "Thailand"
+        },
+        {
+          "ISOCountry": "TJ",
+          "Country": "Tajikistan"
+        },
+        {
+          "ISOCountry": "TK",
+          "Country": "Tokelau Islands"
+        },
+        {
+          "ISOCountry": "TL",
+          "Country": "East Timor"
+        },
+        {
+          "ISOCountry": "TM",
+          "Country": "Turkmenistan"
+        },
+        {
+          "ISOCountry": "TN",
+          "Country": "Tunisia"
+        },
+        {
+          "ISOCountry": "TO",
+          "Country": "Tonga"
+        },
+        {
+          "ISOCountry": "TP",
+          "Country": "East Timor"
+        },
+        {
+          "ISOCountry": "TR",
+          "Country": "Turkey"
+        },
+        {
+          "ISOCountry": "TT",
+          "Country": "Trinidad and Tobago"
+        },
+        {
+          "ISOCountry": "TV",
+          "Country": "Tuvalu"
+        },
+        {
+          "ISOCountry": "TW",
+          "Country": "Taiwan"
+        },
+        {
+          "ISOCountry": "TZ",
+          "Country": "Tanzania"
+        },
+        {
+          "ISOCountry": "UA",
+          "Country": "Ukraine"
+        },
+        {
+          "ISOCountry": "UG",
+          "Country": "Uganda"
+        },
+        {
+          "ISOCountry": "UM",
+          "Country": "American Minor Outlying Islands"
+        },
+        {
+          "ISOCountry": "US",
+          "Country": "USA"
+        },
+        {
+          "ISOCountry": "UY",
+          "Country": "Uruguay"
+        },
+        {
+          "ISOCountry": "UZ",
+          "Country": "Uzbekistan"
+        },
+        {
+          "ISOCountry": "VA",
+          "Country": "Vatican City"
+        },
+        {
+          "ISOCountry": "VC",
+          "Country": "St. Vincent and the Grenadines"
+        },
+        {
+          "ISOCountry": "VE",
+          "Country": "Venezuela"
+        },
+        {
+          "ISOCountry": "VG",
+          "Country": "British Virgin Islands"
+        },
+        {
+          "ISOCountry": "VI",
+          "Country": "American Virgin Islands"
+        },
+        {
+          "ISOCountry": "VN",
+          "Country": "Vietnam"
+        },
+        {
+          "ISOCountry": "VU",
+          "Country": "Vanuatu"
+        },
+        {
+          "ISOCountry": "WF",
+          "Country": "Wallis and Futuna Islands"
+        },
+        {
+          "ISOCountry": "WS",
+          "Country": "Samoa"
+        },
+        {
+          "ISOCountry": "YE",
+          "Country": "Yemen"
+        },
+        {
+          "ISOCountry": "YT",
+          "Country": "Mayotte"
+        },
+        {
+          "ISOCountry": "ZA",
+          "Country": "South Africa"
+        },
+        {
+          "ISOCountry": "ZM",
+          "Country": "Zambia"
+        },
+        {
+          "ISOCountry": "ZW",
+          "Country": "Zimbabwe"
+        }
+      ],
+      "PT": [
+        {
+          "ISOCountry": "AD",
+          "Country": "Andorra"
+        },
+        {
+          "ISOCountry": "AE",
+          "Country": "Emirados �rabes Unidos"
+        },
+        {
+          "ISOCountry": "AF",
+          "Country": "Afeganist�o"
+        },
+        {
+          "ISOCountry": "AG",
+          "Country": "Ant�gua e Barbuda"
+        },
+        {
+          "ISOCountry": "AI",
+          "Country": "Anguilla"
+        },
+        {
+          "ISOCountry": "AL",
+          "Country": "Alb�nia"
+        },
+        {
+          "ISOCountry": "AM",
+          "Country": "Arm�nia"
+        },
+        {
+          "ISOCountry": "AO",
+          "Country": "Angola"
+        },
+        {
+          "ISOCountry": "AQ",
+          "Country": "Ant�rtica"
+        },
+        {
+          "ISOCountry": "AR",
+          "Country": "Argentina"
+        },
+        {
+          "ISOCountry": "AS",
+          "Country": "Samoa Americana"
+        },
+        {
+          "ISOCountry": "AT",
+          "Country": "�ustria"
+        },
+        {
+          "ISOCountry": "AU",
+          "Country": "Austr�lia"
+        },
+        {
+          "ISOCountry": "AW",
+          "Country": "Aruba"
+        },
+        {
+          "ISOCountry": "AZ",
+          "Country": "Azerbaij�o"
+        },
+        {
+          "ISOCountry": "BA",
+          "Country": "B�snia-Herzeg�vina"
+        },
+        {
+          "ISOCountry": "BB",
+          "Country": "Barbados"
+        },
+        {
+          "ISOCountry": "BD",
+          "Country": "Bangladesh"
+        },
+        {
+          "ISOCountry": "BE",
+          "Country": "B�lgica"
+        },
+        {
+          "ISOCountry": "BF",
+          "Country": "Burquina Faso"
+        },
+        {
+          "ISOCountry": "BG",
+          "Country": "Bulg�ria"
+        },
+        {
+          "ISOCountry": "BH",
+          "Country": "Barein"
+        },
+        {
+          "ISOCountry": "BI",
+          "Country": "Burundi"
+        },
+        {
+          "ISOCountry": "BJ",
+          "Country": "Benin"
+        },
+        {
+          "ISOCountry": "BM",
+          "Country": "Bermudas"
+        },
+        {
+          "ISOCountry": "BN",
+          "Country": "Brunei Darussalam"
+        },
+        {
+          "ISOCountry": "BO",
+          "Country": "Bol�via"
+        },
+        {
+          "ISOCountry": "BQ",
+          "Country": "Bonaire, Santo Eust�quio e Saba"
+        },
+        {
+          "ISOCountry": "BR",
+          "Country": "Brasil"
+        },
+        {
+          "ISOCountry": "BS",
+          "Country": "Bahamas"
+        },
+        {
+          "ISOCountry": "BT",
+          "Country": "But�o"
+        },
+        {
+          "ISOCountry": "BV",
+          "Country": "Ilhas Bouvet"
+        },
+        {
+          "ISOCountry": "BW",
+          "Country": "Botsuana"
+        },
+        {
+          "ISOCountry": "BY",
+          "Country": "Bielorr�ssia"
+        },
+        {
+          "ISOCountry": "BZ",
+          "Country": "Belize"
+        },
+        {
+          "ISOCountry": "CA",
+          "Country": "Canad�"
+        },
+        {
+          "ISOCountry": "CC",
+          "Country": "Ilhas Coco"
+        },
+        {
+          "ISOCountry": "CD",
+          "Country": "Rep�blica do Congo"
+        },
+        {
+          "ISOCountry": "CF",
+          "Country": "Rep�blica Centro-Africana"
+        },
+        {
+          "ISOCountry": "CG",
+          "Country": "Congo"
+        },
+        {
+          "ISOCountry": "CH",
+          "Country": "Su��a"
+        },
+        {
+          "ISOCountry": "CI",
+          "Country": "Costa do Marfim"
+        },
+        {
+          "ISOCountry": "CK",
+          "Country": "Ilha Cook"
+        },
+        {
+          "ISOCountry": "CL",
+          "Country": "Chile"
+        },
+        {
+          "ISOCountry": "CM",
+          "Country": "Camar�es"
+        },
+        {
+          "ISOCountry": "CN",
+          "Country": "China"
+        },
+        {
+          "ISOCountry": "CO",
+          "Country": "Col�mbia"
+        },
+        {
+          "ISOCountry": "CR",
+          "Country": "Costa Rica"
+        },
+        {
+          "ISOCountry": "CS",
+          "Country": "S�rvia e Montenegro"
+        },
+        {
+          "ISOCountry": "CU",
+          "Country": "Cuba"
+        },
+        {
+          "ISOCountry": "CV",
+          "Country": "Cabo Verde"
+        },
+        {
+          "ISOCountry": "CW",
+          "Country": "Cura�ao"
+        },
+        {
+          "ISOCountry": "CX",
+          "Country": "Ilha Christmas"
+        },
+        {
+          "ISOCountry": "CY",
+          "Country": "Chipre"
+        },
+        {
+          "ISOCountry": "CZ",
+          "Country": "Rep�blica Tcheca"
+        },
+        {
+          "ISOCountry": "DE",
+          "Country": "Alemanha"
+        },
+        {
+          "ISOCountry": "DJ",
+          "Country": "Djibuti"
+        },
+        {
+          "ISOCountry": "DK",
+          "Country": "Dinamarca"
+        },
+        {
+          "ISOCountry": "DM",
+          "Country": "Dominica"
+        },
+        {
+          "ISOCountry": "DO",
+          "Country": "Rep�blica Dominicana"
+        },
+        {
+          "ISOCountry": "DZ",
+          "Country": "Arg�lia"
+        },
+        {
+          "ISOCountry": "EC",
+          "Country": "Equador"
+        },
+        {
+          "ISOCountry": "EE",
+          "Country": "Est�nia"
+        },
+        {
+          "ISOCountry": "EG",
+          "Country": "Egito"
+        },
+        {
+          "ISOCountry": "EH",
+          "Country": "Saara Ocidental"
+        },
+        {
+          "ISOCountry": "ER",
+          "Country": "Eritr�ia"
+        },
+        {
+          "ISOCountry": "ES",
+          "Country": "Espanha"
+        },
+        {
+          "ISOCountry": "ET",
+          "Country": "Eti�pia"
+        },
+        {
+          "ISOCountry": "FI",
+          "Country": "Finl�ndia"
+        },
+        {
+          "ISOCountry": "FJ",
+          "Country": "Fiji"
+        },
+        {
+          "ISOCountry": "FK",
+          "Country": "Ilhas Malvinas"
+        },
+        {
+          "ISOCountry": "FM",
+          "Country": "Micron�sia"
+        },
+        {
+          "ISOCountry": "FO",
+          "Country": "Ilhas Faro�"
+        },
+        {
+          "ISOCountry": "FR",
+          "Country": "Fran�a"
+        },
+        {
+          "ISOCountry": "GA",
+          "Country": "Gab�o"
+        },
+        {
+          "ISOCountry": "GB",
+          "Country": "Reino Unido"
+        },
+        {
+          "ISOCountry": "GD",
+          "Country": "Granada"
+        },
+        {
+          "ISOCountry": "GE",
+          "Country": "Ge�rgia"
+        },
+        {
+          "ISOCountry": "GF",
+          "Country": "Guiana francesa"
+        },
+        {
+          "ISOCountry": "GG",
+          "Country": "Guernsey (ilha do Canal)"
+        },
+        {
+          "ISOCountry": "GH",
+          "Country": "Gana"
+        },
+        {
+          "ISOCountry": "GI",
+          "Country": "Gibraltar"
+        },
+        {
+          "ISOCountry": "GL",
+          "Country": "Groenl�ndia"
+        },
+        {
+          "ISOCountry": "GM",
+          "Country": "G�mbia"
+        },
+        {
+          "ISOCountry": "GN",
+          "Country": "Guin�"
+        },
+        {
+          "ISOCountry": "GP",
+          "Country": "Guadalupe"
+        },
+        {
+          "ISOCountry": "GQ",
+          "Country": "Guin� Equatorial"
+        },
+        {
+          "ISOCountry": "GR",
+          "Country": "Gr�cia"
+        },
+        {
+          "ISOCountry": "GS",
+          "Country": "Georgia do Sul e Ilhas Sandwich do Sul"
+        },
+        {
+          "ISOCountry": "GT",
+          "Country": "Guatemala"
+        },
+        {
+          "ISOCountry": "GU",
+          "Country": "Guam"
+        },
+        {
+          "ISOCountry": "GW",
+          "Country": "Guin� Bissau"
+        },
+        {
+          "ISOCountry": "GY",
+          "Country": "Guiana"
+        },
+        {
+          "ISOCountry": "HK",
+          "Country": "Hong Kong"
+        },
+        {
+          "ISOCountry": "HM",
+          "Country": "Heard e Ilhas McDonald"
+        },
+        {
+          "ISOCountry": "HN",
+          "Country": "Honduras"
+        },
+        {
+          "ISOCountry": "HR",
+          "Country": "Cro�cia"
+        },
+        {
+          "ISOCountry": "HT",
+          "Country": "Haiti"
+        },
+        {
+          "ISOCountry": "HU",
+          "Country": "Hungria"
+        },
+        {
+          "ISOCountry": "ID",
+          "Country": "Indon�sia"
+        },
+        {
+          "ISOCountry": "IE",
+          "Country": "Irlanda"
+        },
+        {
+          "ISOCountry": "IL",
+          "Country": "Israel"
+        },
+        {
+          "ISOCountry": "IM",
+          "Country": "Ilha de Man"
+        },
+        {
+          "ISOCountry": "IN",
+          "Country": "�ndia"
+        },
+        {
+          "ISOCountry": "IO",
+          "Country": "Territ�rio Brit�nico no Oceano �ndico"
+        },
+        {
+          "ISOCountry": "IQ",
+          "Country": "Iraque"
+        },
+        {
+          "ISOCountry": "IR",
+          "Country": "Ir�"
+        },
+        {
+          "ISOCountry": "IS",
+          "Country": "Isl�ndia"
+        },
+        {
+          "ISOCountry": "IT",
+          "Country": "It�lia"
+        },
+        {
+          "ISOCountry": "JE",
+          "Country": "J�rsei"
+        },
+        {
+          "ISOCountry": "JM",
+          "Country": "Jamaica"
+        },
+        {
+          "ISOCountry": "JO",
+          "Country": "Jord�nia"
+        },
+        {
+          "ISOCountry": "JP",
+          "Country": "Jap�o"
+        },
+        {
+          "ISOCountry": "KE",
+          "Country": "Qu�nia"
+        },
+        {
+          "ISOCountry": "KG",
+          "Country": "Quirguist�o"
+        },
+        {
+          "ISOCountry": "KH",
+          "Country": "Camboja"
+        },
+        {
+          "ISOCountry": "KI",
+          "Country": "Kiribati"
+        },
+        {
+          "ISOCountry": "KM",
+          "Country": "Comores"
+        },
+        {
+          "ISOCountry": "KN",
+          "Country": "S�o Crist�v�o e N�vis"
+        },
+        {
+          "ISOCountry": "KP",
+          "Country": "Cor�ia do Norte"
+        },
+        {
+          "ISOCountry": "KR",
+          "Country": "Cor�ia do Sul"
+        },
+        {
+          "ISOCountry": "KW",
+          "Country": "Kuaite"
+        },
+        {
+          "ISOCountry": "KY",
+          "Country": "Ilhas Cayman"
+        },
+        {
+          "ISOCountry": "KZ",
+          "Country": "Cazaquist�o"
+        },
+        {
+          "ISOCountry": "LA",
+          "Country": "Laos"
+        },
+        {
+          "ISOCountry": "LB",
+          "Country": "L�bano"
+        },
+        {
+          "ISOCountry": "LC",
+          "Country": "Santa L�cia"
+        },
+        {
+          "ISOCountry": "LI",
+          "Country": "Liechtenstein"
+        },
+        {
+          "ISOCountry": "LK",
+          "Country": "Sri Lanka"
+        },
+        {
+          "ISOCountry": "LR",
+          "Country": "Lib�ria"
+        },
+        {
+          "ISOCountry": "LS",
+          "Country": "Lesoto"
+        },
+        {
+          "ISOCountry": "LT",
+          "Country": "Litu�nia"
+        },
+        {
+          "ISOCountry": "LU",
+          "Country": "Luxemburgo"
+        },
+        {
+          "ISOCountry": "LV",
+          "Country": "Let�nia"
+        },
+        {
+          "ISOCountry": "LY",
+          "Country": "L�bia"
+        },
+        {
+          "ISOCountry": "MA",
+          "Country": "Marrocos"
+        },
+        {
+          "ISOCountry": "MC",
+          "Country": "M�naco"
+        },
+        {
+          "ISOCountry": "MD",
+          "Country": "Moldova"
+        },
+        {
+          "ISOCountry": "MG",
+          "Country": "Madagascar"
+        },
+        {
+          "ISOCountry": "MH",
+          "Country": "Ilhas Marshall"
+        },
+        {
+          "ISOCountry": "MK",
+          "Country": "Maced�nia"
+        },
+        {
+          "ISOCountry": "ML",
+          "Country": "Mali"
+        },
+        {
+          "ISOCountry": "MM",
+          "Country": "Myanmar"
+        },
+        {
+          "ISOCountry": "MN",
+          "Country": "Mong�lia"
+        },
+        {
+          "ISOCountry": "MO",
+          "Country": "Macau"
+        },
+        {
+          "ISOCountry": "MP",
+          "Country": "Marianas do Norte"
+        },
+        {
+          "ISOCountry": "MQ",
+          "Country": "Martinica"
+        },
+        {
+          "ISOCountry": "MR",
+          "Country": "Maurit�nia"
+        },
+        {
+          "ISOCountry": "MS",
+          "Country": "Montserrat"
+        },
+        {
+          "ISOCountry": "MT",
+          "Country": "Malta"
+        },
+        {
+          "ISOCountry": "MU",
+          "Country": "Maur�cio"
+        },
+        {
+          "ISOCountry": "MV",
+          "Country": "Maldivas"
+        },
+        {
+          "ISOCountry": "MW",
+          "Country": "Mal�wi"
+        },
+        {
+          "ISOCountry": "MX",
+          "Country": "M�xico"
+        },
+        {
+          "ISOCountry": "MY",
+          "Country": "Mal�sia"
+        },
+        {
+          "ISOCountry": "MZ",
+          "Country": "Mo�ambique"
+        },
+        {
+          "ISOCountry": "NA",
+          "Country": "Nam�bia"
+        },
+        {
+          "ISOCountry": "NC",
+          "Country": "Nova Caled�nia"
+        },
+        {
+          "ISOCountry": "NE",
+          "Country": "N�ger"
+        },
+        {
+          "ISOCountry": "NF",
+          "Country": "Ilha Norfolk"
+        },
+        {
+          "ISOCountry": "NG",
+          "Country": "Nig�ria"
+        },
+        {
+          "ISOCountry": "NI",
+          "Country": "Nicar�gua"
+        },
+        {
+          "ISOCountry": "NL",
+          "Country": "Pa�ses Baixos"
+        },
+        {
+          "ISOCountry": "NO",
+          "Country": "Noruega"
+        },
+        {
+          "ISOCountry": "NP",
+          "Country": "Nepal"
+        },
+        {
+          "ISOCountry": "NR",
+          "Country": "Nauru"
+        },
+        {
+          "ISOCountry": "NU",
+          "Country": "Niue"
+        },
+        {
+          "ISOCountry": "NZ",
+          "Country": "Nova Zel�ndia"
+        },
+        {
+          "ISOCountry": "OM",
+          "Country": "Om�"
+        },
+        {
+          "ISOCountry": "PA",
+          "Country": "Panam�"
+        },
+        {
+          "ISOCountry": "PE",
+          "Country": "Peru"
+        },
+        {
+          "ISOCountry": "PF",
+          "Country": "Polin�sia Francesa"
+        },
+        {
+          "ISOCountry": "PG",
+          "Country": "Papua Nova Guin�"
+        },
+        {
+          "ISOCountry": "PH",
+          "Country": "Filipinas"
+        },
+        {
+          "ISOCountry": "PK",
+          "Country": "Paquist�o"
+        },
+        {
+          "ISOCountry": "PL",
+          "Country": "Pol�nia"
+        },
+        {
+          "ISOCountry": "PM",
+          "Country": "S�o Pedro e Miquelon"
+        },
+        {
+          "ISOCountry": "PN",
+          "Country": "Ilha Pitcairn"
+        },
+        {
+          "ISOCountry": "PR",
+          "Country": "Porto Rico"
+        },
+        {
+          "ISOCountry": "PS",
+          "Country": "Palestina"
+        },
+        {
+          "ISOCountry": "PT",
+          "Country": "Portugal"
+        },
+        {
+          "ISOCountry": "PW",
+          "Country": "Palau"
+        },
+        {
+          "ISOCountry": "PY",
+          "Country": "Paraguai"
+        },
+        {
+          "ISOCountry": "QA",
+          "Country": "Catar"
+        },
+        {
+          "ISOCountry": "RE",
+          "Country": "Reuni�o"
+        },
+        {
+          "ISOCountry": "RO",
+          "Country": "Rom�nia"
+        },
+        {
+          "ISOCountry": "RU",
+          "Country": "Federa��o Russa"
+        },
+        {
+          "ISOCountry": "RW",
+          "Country": "Ruanda"
+        },
+        {
+          "ISOCountry": "SA",
+          "Country": "Ar�bia Saudita"
+        },
+        {
+          "ISOCountry": "SB",
+          "Country": "Ilhas Salom�o"
+        },
+        {
+          "ISOCountry": "SC",
+          "Country": "Seicheles"
+        },
+        {
+          "ISOCountry": "SD",
+          "Country": "Sud�o"
+        },
+        {
+          "ISOCountry": "SE",
+          "Country": "Su�cia"
+        },
+        {
+          "ISOCountry": "SG",
+          "Country": "Cingapura"
+        },
+        {
+          "ISOCountry": "SH",
+          "Country": "Santa Helena"
+        },
+        {
+          "ISOCountry": "SI",
+          "Country": "Eslov�nia"
+        },
+        {
+          "ISOCountry": "SJ",
+          "Country": "Svalbard"
+        },
+        {
+          "ISOCountry": "SK",
+          "Country": "Eslov�quia"
+        },
+        {
+          "ISOCountry": "SL",
+          "Country": "Serra Leoa"
+        },
+        {
+          "ISOCountry": "SM",
+          "Country": "San Marino"
+        },
+        {
+          "ISOCountry": "SN",
+          "Country": "Senegal"
+        },
+        {
+          "ISOCountry": "SO",
+          "Country": "Som�lia"
+        },
+        {
+          "ISOCountry": "SR",
+          "Country": "Suriname"
+        },
+        {
+          "ISOCountry": "SS",
+          "Country": "Sud�o do Sul"
+        },
+        {
+          "ISOCountry": "ST",
+          "Country": "S�o Tom� e Pr�ncipe"
+        },
+        {
+          "ISOCountry": "SV",
+          "Country": "El Salvador"
+        },
+        {
+          "ISOCountry": "SX",
+          "Country": "S�o Martinho (parte neerlandesa)"
+        },
+        {
+          "ISOCountry": "SY",
+          "Country": "S�ria"
+        },
+        {
+          "ISOCountry": "SZ",
+          "Country": "Suazilandia"
+        },
+        {
+          "ISOCountry": "TC",
+          "Country": "Ilhas Turcas e Caicos"
+        },
+        {
+          "ISOCountry": "TD",
+          "Country": "Chade"
+        },
+        {
+          "ISOCountry": "TF",
+          "Country": "Terras Austrais e Ant�rticas Francesas"
+        },
+        {
+          "ISOCountry": "TG",
+          "Country": "Togo"
+        },
+        {
+          "ISOCountry": "TH",
+          "Country": "Tail�ndia"
+        },
+        {
+          "ISOCountry": "TJ",
+          "Country": "Tadjiquist�o"
+        },
+        {
+          "ISOCountry": "TK",
+          "Country": "Ilhas Toquelau"
+        },
+        {
+          "ISOCountry": "TL",
+          "Country": "Timor Leste"
+        },
+        {
+          "ISOCountry": "TM",
+          "Country": "Turcomenist�o"
+        },
+        {
+          "ISOCountry": "TN",
+          "Country": "Tun�sia"
+        },
+        {
+          "ISOCountry": "TO",
+          "Country": "Tonga"
+        },
+        {
+          "ISOCountry": "TP",
+          "Country": "Timor Leste"
+        },
+        {
+          "ISOCountry": "TR",
+          "Country": "Turquia"
+        },
+        {
+          "ISOCountry": "TT",
+          "Country": "Trinidad e Tobago"
+        },
+        {
+          "ISOCountry": "TV",
+          "Country": "Tuvalu"
+        },
+        {
+          "ISOCountry": "TW",
+          "Country": "Taiwan"
+        },
+        {
+          "ISOCountry": "TZ",
+          "Country": "Tanz�nia"
+        },
+        {
+          "ISOCountry": "UA",
+          "Country": "Ucr�nia"
+        },
+        {
+          "ISOCountry": "UG",
+          "Country": "Uganda"
+        },
+        {
+          "ISOCountry": "UM",
+          "Country": "Ilhas Menores dos EUA"
+        },
+        {
+          "ISOCountry": "US",
+          "Country": "EUA"
+        },
+        {
+          "ISOCountry": "UY",
+          "Country": "Uruguai"
+        },
+        {
+          "ISOCountry": "UZ",
+          "Country": "Uzbequist�o"
+        },
+        {
+          "ISOCountry": "VA",
+          "Country": "Vaticano"
+        },
+        {
+          "ISOCountry": "VC",
+          "Country": "S�o Vicente e Granadinas"
+        },
+        {
+          "ISOCountry": "VE",
+          "Country": "Venezuela"
+        },
+        {
+          "ISOCountry": "VG",
+          "Country": "Ilhas Virgens (Reino Unido)"
+        },
+        {
+          "ISOCountry": "VI",
+          "Country": "Ilhas Virgens Americanas"
+        },
+        {
+          "ISOCountry": "VN",
+          "Country": "Vietn�"
+        },
+        {
+          "ISOCountry": "VU",
+          "Country": "Vanuato"
+        },
+        {
+          "ISOCountry": "WF",
+          "Country": "Wallis e Futuna"
+        },
+        {
+          "ISOCountry": "WS",
+          "Country": "Samoa Ocidental"
+        },
+        {
+          "ISOCountry": "YE",
+          "Country": "I�men"
+        },
+        {
+          "ISOCountry": "YT",
+          "Country": "Mayotte"
+        },
+        {
+          "ISOCountry": "ZA",
+          "Country": "�frica do Sul"
+        }
+      ]
+    }
+  
+}

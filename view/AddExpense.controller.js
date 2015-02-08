@@ -53,7 +53,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddExpense", {
 			Id : $.now(),
 			Date : mNewReg.Date,
 			Description : mNewReg.Description,
-			Price : mNewReg.Price,
+			Price : parseFloat(mNewReg.Price).toFixed(2),
 			Currency : mNewReg.Currency
 		// Price: mNewReg.Price.toString()
 		};

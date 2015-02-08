@@ -23,6 +23,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 					var aItems;
 					// On the empty hash select the first item
 					if (sName === "main") {
+						//oList.removeSelections(true);
 						this.selectDetail();
 					}
 
@@ -84,6 +85,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 	},
 
 	onAddTrip : function() {
+		var bReplace = jQuery.device.is.phone ? false : true;
 		sap.ui.core.UIComponent.getRouterFor(this).myNavToWithoutHash({
 			currentView : this.getView(),
 			targetViewName : "com.mlauffer.trip.view.AddTrip",

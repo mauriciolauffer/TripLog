@@ -11,21 +11,6 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditTrip", {
 		sap.ui.core.UIComponent.getRouterFor(this).attachRouteMatched(this.onRouteMatched, this);
 	},
 	
-	/*onBeforeRendering : function() {
-		var sPath = "";
-		var oSelect = this.getView().byId("country");
-		if (sap.ui.getCore().getConfiguration().getLanguage().substring(0,2) == "pt") {
-			sPath = "country>/CountryCollection/PT";
-		} else {
-			sPath = "country>/CountryCollection/EN";
-		}
-		oSelect.bindItems(sPath, new sap.ui.core.Item({
-			key : "{country>ISOCountry}",
-			text : "{country>Country}",
-			selectedKey : "{Country}"
-		}));
-	},*/
-	
 	onRouteMatched : function(oEvent) {
 		// when detail navigation occurs, update the binding context
 		if (oEvent.getParameter("name") === "editTrip") {
@@ -33,15 +18,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditTrip", {
 			this._actualTrip = oEvent.getParameter("arguments").trip;
 			var sProductPath = "/Trips/" + this._actualTrip;
 			var oView = this.getView();
-			oView.bindElement(sProductPath);
-			
-			/*console.log(this.getView().byId("country").getSelectedItemId());
-			console.log(this.getView().byId("country").getSelectedKey());
-			console.log(oView.getModel().getProperty("Name"));
-			oView.byId("country").setSelectedKey('US');
-			console.log(this.getView().byId("country").getSelectedItemId());
-			console.log(this.getView().byId("country").getSelectedKey());*/
-			
+			oView.bindElement(sProductPath);			
 
 			// Check that the product specified actually was found
 			oView.getElementBinding().attachEventOnce("dataReceived", jQuery.proxy(function() {
@@ -113,7 +90,31 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditTrip", {
 	},
 	
 	onDelete : function(oEvent) {
+		var that = this;
+		var oContext = oEvent.getSource().getBindingContext();
+		var oBundle = this.getView().getModel("i18n").getResourceBundle();
 		
+		// show confirmation dialog
+		sap.m.MessageBox.confirm(oBundle.getText("dialogMsgDelete"), function(oAction) {
+			if (sap.m.MessageBox.Action.OK === oAction) {
+				var oModel = that.getView().getModel();
+				
+				try {
+					oModel.getData().Trips.splice(oContext.getPath().slice(-1), 1);
+					// Local Storage
+					jQuery.sap.storage(jQuery.sap.storage.Type.local).put("MLui5Trip", oModel.getData().Trips);
+				} catch (e) {
+					sap.m.MessageBox.alert(oBundle.getText("errorSave") + ":\n" + e.message);
+					return;
+				}
+				
+				oModel.refresh(true);
+				this._actualTrip = null;
+				that.onCancel();
+				that.getView().unbindElement();
+				sap.m.MessageToast.show(oBundle.getText("successDelete"));
+			}
+		}, oBundle.getText("dialogTitleDelete"));
 	},
 
 	onCancel : function(oEvent) {

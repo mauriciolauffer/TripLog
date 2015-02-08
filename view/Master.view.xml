@@ -5,7 +5,7 @@
 			<Bar id="searchBar">
 				<contentMiddle>
 					<SearchField id="searchField" showRefreshButton="{device>/isNoTouch}"
-						search="onSearch" tooltip="{i18n>masterSearchTooltip}" width="100%">
+						search="onSearch" width="100%">
 					</SearchField>
 				</contentMiddle>
 			</Bar>
@@ -16,7 +16,7 @@
 				growingScrollToLoad="true">
 				<items>
 					<ObjectListItem type="{device>/listItemType}" press="onSelect"
-						title="{Name}" />
+						title="{Name}" intro="{DateBegin}" />
 				</items>
 			</List>
 		</content>

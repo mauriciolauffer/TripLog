@@ -1,0 +1,48 @@
+{
+  "Trips": [
+    {
+      "idTrip": "111",
+      "Name": "Hawaii",
+      "DateBegin": "2010-01-01",
+      "DateEnd": "2010-01-11",
+      "Expenses": [
+        {
+          "idExpense": "01",
+          "Date": "2010-01-10",
+          "Description": "Alfajor",
+          "Price": "12.34",
+          "Currency": "USD"
+        }
+      ]
+    },
+        {
+      "idTrip": "222",
+      "Name": "Cartagena",
+      "DateBegin": "2010-01-01",
+      "DateEnd": "2010-01-11",
+      "Expenses": [
+        {
+          "idExpense": "01",
+          "Date": "2011-01-11",
+          "Description": "Dooooorgas",
+          "Price": "122.344",
+          "Currency": "BRL"
+        },
+        {
+          "idExpense": "02",
+          "Date": "2011-01-11",
+          "Description": "Rum",
+          "Price": "2.344",
+          "Currency": "BRL"
+        },
+        {
+          "idExpense": "03",
+          "Date": "2011-01-11",
+          "Description": "Cosas",
+          "Price": "122.344",
+          "Currency": "BRL"
+        }
+      ]
+    }
+  ]
+}

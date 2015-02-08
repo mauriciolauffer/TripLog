@@ -46,7 +46,7 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditExpense", {
 		try {
 			oModel.setProperty("Date", this.getView().byId("date").getValue(), oContext);
 			oModel.setProperty("Description", this.getView().byId("description").getValue(), oContext);
-			oModel.setProperty("Price", this.getView().byId("price").getValue(), oContext);
+			oModel.setProperty("Price", parseFloat(this.getView().byId("price").getValue()).toFixed(2), oContext);
 			oModel.setProperty("Currency", this.getView().byId("currency").getValue(), oContext);
 
 		} catch (e) {
@@ -101,7 +101,29 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditExpense", {
 	},
 	
 	onDelete : function(oEvent) {
+		var that = this;
+		var oContext = oEvent.getSource().getBindingContext();
+		var oBundle = this.getView().getModel("i18n").getResourceBundle();
 		
+		// show confirmation dialog
+		sap.m.MessageBox.confirm(oBundle.getText("dialogMsgDelete"), function(oAction) {
+			if (sap.m.MessageBox.Action.OK === oAction) {
+				var oModel = that.getView().getModel();
+				
+				try {
+					oModel.getData().Trips[ that._actualTrip ].Expenses.splice(oContext.getPath().slice(-1), 1);
+					// Local Storage
+					jQuery.sap.storage(jQuery.sap.storage.Type.local).put("MLui5Trip", oModel.getData().Trips);
+				} catch (e) {
+					sap.m.MessageBox.alert(oBundle.getText("errorSave") + ":\n" + e.message);
+					return;
+				}
+				
+				oModel.refresh(true);
+				that.onCancel();
+				sap.m.MessageToast.show(oBundle.getText("successDelete"));
+			}
+		}, oBundle.getText("dialogTitleDelete"));
 	},
 
 	onCancel : function(oEvent) {

@@ -6,7 +6,7 @@ jQuery.sap.require("com.mlauffer.trip.util.MLauffer-FieldValidation");
 sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 
 	metadata : {
-		name : "TripLog",
+		name : "Trip Expenses Log",
 		version : "1.0.0",
 		includes : [],
 		dependencies : {
