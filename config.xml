@@ -3,12 +3,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mlauffer.trip"
+        id        = "com.mlauffer.triplog"
         version   = "1.0.0">
 
-    <name>Trip Expenses Log</name>
-
-    <description>Trip Expenses Log</description>
+    <name>Trip Log</name>
+    <description>Trip Log</description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
         Mauricio Lauffer

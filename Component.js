@@ -16,7 +16,9 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 		rootView : "com.mlauffer.trip.view.App",
 
 		config : {
-			resourceBundle : "i18n/messageBundle.properties",
+			resourceBundle : "./i18n/messageBundle.properties",
+			homeScreenIconPhone : "./img/triplog_57p.png",
+        	homeScreenIconTablet : "./img/triplog_72p.png",
 			serviceConfig : {
 				name : "Northwind",
 				//serviceUrl : "./model/mock.json"
@@ -125,5 +127,5 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 		this.setModel(deviceModel, "device");
 
 		this.getRouter().initialize();
-	},
+	}
 });
