@@ -11,21 +11,21 @@
 						path: 'DateBegin',
 						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
 						}" />
-				</attributes>
-				<statuses>
-					<ObjectStatus title="{i18n>dateEnd}"
+					<ObjectAttribute title="{i18n>dateEnd}"
 						text="{
 						path: 'DateEnd',
 						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
 						}" />
+				</attributes>
+				<statuses>
+				    <ObjectStatus title="{i18n>total}" text="$ {Total}" />
 				</statuses>
 			</ObjectHeader>
-			<Table id="expenses" items="{Expenses}" noDataText="{i18n>noDataText}"
-				growing="true" growingScrollToLoad="true">
+			<Table id="expenses" items="{Expenses}" noDataText="{i18n>noDataText}">
 				<columns>
-					<Column>
+					<!-- <Column>
 						<Text text="{i18n>date}" />
-					</Column>
+					</Column> -->
 					<Column>
 						<Text text="{i18n>description}" />
 					</Column>
@@ -35,11 +35,11 @@
 				</columns>
 				<items>
 					<ColumnListItem type="Navigation" press="onDetailSelect">
-						<Text
+						<!-- <Text
 							text="{
 						path: 'Date',
 						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
-						}" />
+						}" />-->
 						<Text text="{Description}" />
 						<ObjectNumber number="{Price}" unit="{Currency}" />
 					</ColumnListItem>

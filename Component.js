@@ -7,7 +7,7 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 
 	metadata : {
 		name : "Trip Log",
-		version : "1.0.0",
+		version : "1.1.0",
 		includes : [],
 		dependencies : {
 			libs : [ "sap.m", "sap.ui.layout" ],
@@ -20,7 +20,7 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 			homeScreenIconPhone : "./img/triplog_57p.png",
         	homeScreenIconTablet : "./img/triplog_72p.png",
 			serviceConfig : {
-				name : "Northwind",
+				name : "MockUp",
 				//serviceUrl : "./model/mock.json"
 				serviceUrl : "./model/initModel.json"
 			}

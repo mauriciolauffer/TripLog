@@ -3,23 +3,22 @@ jQuery.sap.require("sap.m.MessageToast");
 
 sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 
-	oAlertDialog : null,
-	oBusyDialog : null,
+	oAlertDialog: null,
+	oBusyDialog: null,
 
-	initializeNewTripData : function() {
+	initializeNewTripData: function() {
 		this.getView().getModel("newTrip").setData({
-			Detail : {}
+			Detail: {}
 		});
 	},
 
-	onInit : function() {
+	onInit: function() {
 		this.getView().setModel(new sap.ui.model.json.JSONModel(), "newTrip");
 		this.initializeNewTripData();
 	},
 
-	onAfterRendering : function() {
-	},
-	
+	onAfterRendering: function() {},
+
 	/*onBeforeRendering : function() {
 		var sPath = "";
 		var oSelect = this.getView().byId("country");
@@ -34,18 +33,20 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 		}));
 	},*/
 
-	showErrorAlert : function(sMessage) {
+	showErrorAlert: function(sMessage) {
 		sap.m.MessageBox.alert(sMessage);
 	},
 
-	saveTrip : function(oEvent) {
+	saveTrip: function(oEvent) {
 		var mNewTrip = this.getView().getModel("newTrip").getData().Detail;
 		// Basic payload data
 		var mPayload = {
-			Id : $.now(),
-			Name : mNewTrip.Name,
-			DateBegin : mNewTrip.DateBegin,
-			DateEnd : mNewTrip.DateEnd
+			Id: $.now(),
+			Name: mNewTrip.Name,
+			DateJS: this.getView().byId("dateBegin").getDateValue(),
+			DateBegin: mNewTrip.DateBegin,
+			DateEnd: mNewTrip.DateEnd,
+			Total: 0
 		};
 
 		var oModel = this.getView().getModel();
@@ -62,13 +63,13 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 
 		oModel.refresh(true);
 		this.initializeNewTripData();
-		
+
 		// Local Storage
 		jQuery.sap.storage(jQuery.sap.storage.Type.local).put("MLui5Trip", oModel.getData().Trips);
-		
+
 		sap.ui.core.UIComponent.getRouterFor(this).navTo("trip", {
-			from : "master",
-			trip : iItems
+			from: "master",
+			trip: iItems
 		}, true);
 
 		// ID of newly inserted trip is available in mResponse.ID
@@ -76,13 +77,13 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 		sap.m.MessageToast.show("Trip '" + mPayload.Name + "' added");
 	},
 
-	onSave : function(oEvent) {
+	onSave: function(oEvent) {
 		var oBundle = this.getView().getModel("i18n").getResourceBundle();
 		var oValidator = new mlauffer.controls.FieldValidation();
 
-		var aElements = [ this.getView().byId("name"),
+		var aElements = [this.getView().byId("name"),
 				this.getView().byId("dateBegin"),
-				this.getView().byId("dateEnd") ];
+				this.getView().byId("dateEnd")];
 		var bValid = oValidator.required(aElements);
 		if (!bValid) {
 			sap.m.MessageToast.show(oBundle.getText("ErrorRequired"));
@@ -95,12 +96,12 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.AddTrip", {
 		this.saveTrip(oEvent);
 	},
 
-	onCancel : function() {
+	onCancel: function() {
 		sap.ui.core.UIComponent.getRouterFor(this).backWithoutHash(this.getView());
 		this.getView().unbindElement();
 	},
 
-	onDialogClose : function(oEvent) {
+	onDialogClose: function(oEvent) {
 		oEvent.getSource().getParent().close();
 	}
 });

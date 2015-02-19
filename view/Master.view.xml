@@ -12,11 +12,13 @@
 		</subHeader>
 		<content>
 			<List id="list" items="{/Trips}" mode="{device>/listMode}"
-				noDataText="{i18n>noDataText}" select="onSelect" growing="true"
-				growingScrollToLoad="true">
+				noDataText="{i18n>noDataText}" select="onSelect">
 				<items>
 					<ObjectListItem type="{device>/listItemType}" press="onSelect"
-						title="{Name}" intro="{DateBegin}" />
+						title="{Name}" intro="{
+						path: 'DateBegin',
+						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
+						}" number="{Total}" />
 				</items>
 			</List>
 		</content>
