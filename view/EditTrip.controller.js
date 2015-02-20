@@ -112,7 +112,8 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.EditTrip", {
 
 				oModel.refresh(true);
 				this._actualTrip = null;
-				that.onCancel();
+				//that.onCancel();
+				sap.ui.core.UIComponent.getRouterFor(that).navTo("main", {}, true);
 				that.getView().unbindElement();
 				sap.m.MessageToast.show(oBundle.getText("successDelete"));
 			}

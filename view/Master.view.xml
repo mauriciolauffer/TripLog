@@ -18,7 +18,7 @@
 						title="{Name}" intro="{
 						path: 'DateBegin',
 						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
-						}" number="{Total}" />
+						}" />
 				</items>
 			</List>
 		</content>
