@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.mlauffer.trip.view.Map"
+	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page showNavButton="true" navButtonPress="onNavBack"
+		enableScrolling="false" title="{i18n>map}">
+		<content>
+			<HBox id="mapCanvas" fitContainer="true" />
+		</content>
+	</Page>
+</mvc:View>

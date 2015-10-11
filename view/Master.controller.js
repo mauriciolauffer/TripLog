@@ -2,6 +2,14 @@ jQuery.sap.require("com.mlauffer.trip.util.Formatter");
 
 sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 
+	/**
+	 * Called when a controller is instantiated and its View controls (if
+	 * available) are already created. Can be used to modify the View before it
+	 * is displayed, to bind event handlers and do other one-time
+	 * initialization.
+	 * 
+	 * @memberOf view.AddExpense
+	 */
 	onInit : function() {
 		this.oUpdateFinishedDeferred = jQuery.Deferred();
 
@@ -10,7 +18,31 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 					this.oUpdateFinishedDeferred.resolve();
 				}, this);
 
-		sap.ui.core.UIComponent.getRouterFor(this).attachRouteMatched(this.onRouteMatched, this);
+		sap.ui.core.UIComponent.getRouterFor(this).attachRouteMatched(
+				this.onRouteMatched, this);
+	},
+
+	onAfterRendering : function() {
+		this.groupAndSort();
+	},
+
+	groupAndSort : function() {
+		var mGroupFunctions = {
+			Date : function(oContext) {
+				var name = oContext.getProperty("DateJS");
+				var sYear = com.mlauffer.trip.util.Formatter.year(name);
+				return {
+					key : sYear,
+					text : sYear
+				};
+			}
+		};
+		var vGroup = mGroupFunctions.Date;
+		var bDescending = false;
+		var aSorter = [];
+		aSorter.push(new sap.ui.model.Sorter("DateJS", bDescending, vGroup));
+		aSorter.push(new sap.ui.model.Sorter("DateJS", bDescending));
+		this.getView().byId("list").getBinding("items").sort(aSorter);
 	},
 
 	onRouteMatched : function(oEvent) {
@@ -18,29 +50,29 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 		var sName = oEvent.getParameter("name");
 		var oArguments = oEvent.getParameter("arguments");
 		// Wait for the list to be loaded once
-		jQuery.when(this.oUpdateFinishedDeferred).then(
-				jQuery.proxy(function() {
-					var aItems;
-					// On the empty hash select the first item
-					if (sName === "main") {
-						//oList.removeSelections(true);
-						this.selectDetail();
+		jQuery.when(this.oUpdateFinishedDeferred).then(jQuery.proxy(function() {
+			// On the empty hash select the first item
+			if (sName === "main") {
+				this.selectDetail();
+			}
+
+			// Try to select the item in the list
+			if (sName === "trip") {
+				var aItems = oList.getItems();
+				for (var i = 0; i < aItems.length; i++) {
+					try {
+						var sPath = aItems[i].getBindingContext().getPath();
+					} catch (e) {
+						continue;
 					}
-
-					// Try to select the item in the list
-					if (sName === "trip") {
-
-						aItems = oList.getItems();
-						for (var i = 0; i < aItems.length; i++) {
-							if (aItems[i].getBindingContext().getPath() === "/Trips/" + oArguments.trip) {
-							//if (aItems[i].getBindingContext().getPath() === "/" + oArguments.trip) {
-								oList.setSelectedItem(aItems[i], true);
-								break;
-							}
-						}
+					if (sPath === "/Trips/" + oArguments.trip) {
+						oList.setSelectedItem(aItems[i], true);
+						break;
 					}
+				}
+			}
 
-				}, this));
+		}, this));
 	},
 
 	selectDetail : function() {
@@ -75,17 +107,20 @@ sap.ui.core.mvc.Controller.extend("com.mlauffer.trip.view.Master", {
 	},
 
 	showDetail : function(oItem) {
+		try {
+			var sPath = oItem.getBindingContext().getPath();
+		} catch (e) {
+			sPath = "/0";
+		}
 		// If we're on a phone, include nav in history; if not, don't.
 		var bReplace = jQuery.device.is.phone ? false : true;
 		sap.ui.core.UIComponent.getRouterFor(this).navTo("trip", {
 			from : "master",
-			//trip : oItem.getBindingContext().getPath().substr(1),
-			trip : oItem.getBindingContext().getPath().slice(-1)
+			trip : sPath.slice(sPath.lastIndexOf("/") + 1)
 		}, bReplace);
 	},
 
 	onAddTrip : function() {
-		var bReplace = jQuery.device.is.phone ? false : true;
 		sap.ui.core.UIComponent.getRouterFor(this).myNavToWithoutHash({
 			currentView : this.getView(),
 			targetViewName : "com.mlauffer.trip.view.AddTrip",

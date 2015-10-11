@@ -6,8 +6,8 @@ jQuery.sap.require("com.mlauffer.trip.util.MLauffer-FieldValidation");
 sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 
 	metadata : {
-		name : "Trip Expenses Log",
-		version : "1.0.0",
+		name : "TripLog",
+		version : "1.3.0",
 		includes : [],
 		dependencies : {
 			libs : [ "sap.m", "sap.ui.layout" ],
@@ -16,9 +16,11 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 		rootView : "com.mlauffer.trip.view.App",
 
 		config : {
-			resourceBundle : "i18n/messageBundle.properties",
+			resourceBundle : "./i18n/messageBundle.properties",
+			homeScreenIconPhone : "./img/triplog_57p.png",
+			homeScreenIconTablet : "./img/triplog_72p.png",
 			serviceConfig : {
-				name : "Northwind",
+				name : "MockUp",
 				//serviceUrl : "./model/mock.json"
 				serviceUrl : "./model/initModel.json"
 			}
@@ -50,6 +52,10 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 					pattern : "trip/{trip}/expense/{expense}",
 					name : "editExpense",
 					view : "EditExpense"
+				}, {
+					pattern : "trip/{trip}/expense/{expense}/map",
+					name : "map",
+					view : "Map"
 				}, {
 					pattern : "trip/{trip}/addExpense",
 					name : "expense",
@@ -83,33 +89,44 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 			bundleUrl : [ rootPath, mConfig.resourceBundle ].join("/")
 		});
 		this.setModel(i18nModel, "i18n");
-		
+
 		// Create and set domain model to the component
 		var oModel = new sap.ui.model.json.JSONModel();
 		oModel.setDefaultBindingMode("OneWay");
 
 		// Local Storage
-		var mTrips = jQuery.sap.storage(jQuery.sap.storage.Type.local).get("MLui5Trip");
+		var mTrips = jQuery.sap.storage(jQuery.sap.storage.Type.local).get(
+				"MLui5Trip");
 		// Check Storage
 		if (mTrips) {
 			var mData = {};
 			mData.Trips = mTrips;
+			// Create JS Date
+			$.each(mData.Trips, function(i, oItem) {
+				oItem.DateJS = new Date(oItem.DateJS);
+				if (oItem.Expenses) {
+					$.each(oItem.Expenses, function(j, oItemEx) {
+						oItemEx.DateJS = new Date(oItemEx.DateJS);
+					});
+				}
+			});
 			oModel.setData(mData);
 		} else {
 			oModel.loadData(mConfig.serviceConfig.serviceUrl);
 		}
-		//oModel.loadData(mConfig.serviceConfig.serviceUrl);
 		this.setModel(oModel);
-		
-		/*var oCountryModel = new sap.ui.model.json.JSONModel();
-		oCountryModel.loadData("./model/country.json");
-		oCountryModel.setDefaultBindingMode("OneWay");
-		this.setModel(oCountryModel, "country");
-		
-		var oCurrencyModel = new sap.ui.model.json.JSONModel();
-		oCurrencyModel.loadData("./model/currency.json");
-		oCurrencyModel.setDefaultBindingMode("OneWay");
-		this.setModel(oCurrencyModel, "currency");*/
+
+		/*
+		 * var oCountryModel = new sap.ui.model.json.JSONModel();
+		 * oCountryModel.loadData("./model/country.json");
+		 * oCountryModel.setDefaultBindingMode("OneWay");
+		 * this.setModel(oCountryModel, "country");
+		 * 
+		 * var oCurrencyModel = new sap.ui.model.json.JSONModel();
+		 * oCurrencyModel.loadData("./model/currency.json");
+		 * oCurrencyModel.setDefaultBindingMode("OneWay");
+		 * this.setModel(oCurrencyModel, "currency");
+		 */
 
 		// set device model
 		var deviceModel = new sap.ui.model.json.JSONModel({
@@ -125,5 +142,5 @@ sap.ui.core.UIComponent.extend("com.mlauffer.trip.Component", {
 		this.setModel(deviceModel, "device");
 
 		this.getRouter().initialize();
-	},
+	}
 });

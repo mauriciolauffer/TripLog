@@ -4,17 +4,19 @@ jQuery.sap.declare("com.mlauffer.trip.MyRouter");
 
 sap.ui.core.routing.Router.extend("com.mlauffer.trip.MyRouter", {
 
-	constructor : function() {
+	constructor: function() {
 		sap.ui.core.routing.Router.apply(this, arguments);
 		this._oRouteMatchedHandler = new sap.m.routing.RouteMatchedHandler(this);
 	},
 
-	myNavBack : function(sRoute, mData) {
+	myNavBack: function(sRoute, mData) {
 		var oHistory = sap.ui.core.routing.History.getInstance();
 		var sPreviousHash = oHistory.getPreviousHash();
 
 		// The history contains a previous entry
 		if (sPreviousHash !== undefined) {
+			window.history.go(-1);
+		} else if (sRoute === undefined) {
 			window.history.go(-1);
 		} else {
 			var bReplace = true; // otherwise we go backwards with a forward history
@@ -35,7 +37,7 @@ sap.ui.core.routing.Router.extend("com.mlauffer.trip.MyRouter", {
 	 * 	<li> data : the data passed to the navContainers livecycle events</li>
 	 * </ul>
 	 */
-	myNavToWithoutHash : function (oOptions) {
+	myNavToWithoutHash: function(oOptions) {
 		var oSplitApp = this._findSplitApp(oOptions.currentView);
 
 		// Load view, add it to the page aggregation, and navigate to it
@@ -44,18 +46,18 @@ sap.ui.core.routing.Router.extend("com.mlauffer.trip.MyRouter", {
 		oSplitApp.to(oView.getId(), oOptions.transition || "show", oOptions.data);
 	},
 
-	backWithoutHash : function (oCurrentView, bIsMaster) {
+	backWithoutHash: function(oCurrentView, bIsMaster) {
 		var sBackMethod = bIsMaster ? "backMaster" : "backDetail";
 		this._findSplitApp(oCurrentView)[sBackMethod]();
 	},
-	
-	destroy : function() {
+
+	destroy: function() {
 		sap.ui.core.routing.Router.prototype.destroy.apply(this, arguments);
 		this._oRouteMatchedHandler.destroy();
 	},
 
-	_findSplitApp : function(oControl) {
-		sAncestorControlName = "idAppControl";
+	_findSplitApp: function(oControl) {
+		var sAncestorControlName = "idAppControl";
 
 		if (oControl instanceof sap.ui.core.mvc.View && oControl.byId(sAncestorControlName)) {
 			return oControl.byId(sAncestorControlName);

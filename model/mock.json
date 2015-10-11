@@ -6,6 +6,7 @@
       "Country" : "US",
       "DateBegin": "2010-01-01",
       "DateEnd": "2010-01-11",
+      "Total": "12",
       "Expenses": [
         {
           "idExpense": "01",
@@ -22,6 +23,7 @@
       "Country" : "CO",
       "DateBegin": "2010-01-01",
       "DateEnd": "2010-01-11",
+      "Total": "12",
       "Expenses": [
         {
           "idExpense": "01",

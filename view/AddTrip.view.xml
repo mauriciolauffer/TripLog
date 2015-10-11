@@ -1,22 +1,22 @@
 <mvc:View controllerName="com.mlauffer.trip.view.AddTrip"
 	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
-	<Page title="{i18n>trip}">
+	<Page showNavButton="true" navButtonPress="onNavBack" title="{i18n>trip}">
 		<l:Grid defaultSpan="L12 M12 S12" width="auto">
 			<l:content>
-				<f:SimpleForm minWidth="800" maxContainerCols="2"
-					editable="true" layout="ResponsiveGridLayout" labelSpanL="3"
-					labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+				<f:SimpleForm maxContainerCols="2" editable="true"
+					layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+					emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
 					<f:content>
 						<core:Title text="{i18n>newTrip}" />
 						<Label text="{i18n>tripName}" />
 						<Input id="name" value="{newTrip>/Detail/Name}" />
 						<!-- <Label text="{i18n>country}" /> <Select id="country"> <- <core:Item 
 							key="{ISOCountry}" text="{Country}" /> -> </Select> -->
-						<Label text="{i18n>dateBegin}" />
+						<Label text="{i18n>from}" />
 						<DateTimeInput id="dateBegin" type="Date"
 							value="{newTrip>/Detail/DateBegin}" />
-						<Label text="{i18n>dateEnd}" />
+						<Label text="{i18n>to}" />
 						<DateTimeInput id="dateEnd" type="Date"
 							value="{newTrip>/Detail/DateEnd}" />
 					</f:content>
@@ -28,7 +28,6 @@
 				<contentRight>
 					<Button icon="sap-icon://save" text="{i18n>buttonSave}"
 						type="Emphasized" press="onSave" />
-					<Button text="{i18n>buttonCancel}" press="onCancel" />
 				</contentRight>
 			</Bar>
 		</footer>

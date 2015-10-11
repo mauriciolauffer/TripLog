@@ -8,8 +8,7 @@
 			</FlexBox>
 		</content>
 		<footer>
-			<Bar>
-			</Bar>
+			<Bar />
 		</footer>
 	</Page>
 </mvc:View>

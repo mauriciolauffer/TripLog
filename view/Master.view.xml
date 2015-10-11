@@ -1,22 +1,24 @@
 <mvc:View controllerName="com.mlauffer.trip.view.Master"
 	displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page id="page" title="{i18n>masterTitle}">
+	<Page title="{i18n>masterTitle}">
 		<subHeader>
 			<Bar id="searchBar">
 				<contentMiddle>
 					<SearchField id="searchField" showRefreshButton="{device>/isNoTouch}"
-						search="onSearch" width="100%">
-					</SearchField>
+						search="onSearch" width="100%" />
 				</contentMiddle>
 			</Bar>
 		</subHeader>
 		<content>
 			<List id="list" items="{/Trips}" mode="{device>/listMode}"
-				noDataText="{i18n>noDataText}" select="onSelect" growing="true"
-				growingScrollToLoad="true">
+				noDataText="{i18n>noDataText}" select="onSelect">
 				<items>
 					<ObjectListItem type="{device>/listItemType}" press="onSelect"
-						title="{Name}" intro="{DateBegin}" />
+						title="{Name}"
+						intro="{
+						path: 'DateBegin',
+						formatter: 'com.mlauffer.trip.util.Formatter.dateMedium'
+						}" />
 				</items>
 			</List>
 		</content>
